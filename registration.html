@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        form label{
+            display:inline-block;
+            padding:.5em;
+        }
+
+        form label p{
+            margin:0;
+        }
+
+        form label > span:first-child{
+            display:block;
+            font-weight:600;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <label>
+            <span>E-mail</span>
+            <input name="login" type="email" />
+        </label>
+
+        <label>
+            <span>Password</span>
+            <p id="pass-desc">Should have at least 12 characters. The longer, the better. Long phrases are easier to remember, safer and harder to hack.</p>
+            <input name="password" type="password" aria-describedby="pass-desc" />
+        </label>
+    </form>
+</body>
+</html>
